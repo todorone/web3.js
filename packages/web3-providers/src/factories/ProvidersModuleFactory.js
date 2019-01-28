@@ -96,7 +96,7 @@ export default class ProvidersModuleFactory {
      * @returns {XMLHttpRequest}
      */
     createXMLHttpRequest(host, timeout = 0, headers, agent) {
-        const request = new XHR();
+        const request = new XMLHttpRequest();
         request.nodejsSet(agent);
 
         request.open('POST', host, true);
